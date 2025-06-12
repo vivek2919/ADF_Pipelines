@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "fabricDF-dev"
+		},
+		"ls_blobfabricstorage_connectionString": {
+			"value": ""
+		},
+		"ls_demo_fabric_sqlserver_password": {
+			"value": ""
+		},
+		"ls_demo_fabric_sqlserver_properties_typeProperties_server": {
+			"value": "demo-fabric-sqlserver.database.windows.net"
+		},
+		"ls_demo_fabric_sqlserver_properties_typeProperties_database": {
+			"value": "fabric_database"
+		},
+		"ls_demo_fabric_sqlserver_properties_typeProperties_userName": {
+			"value": "azureadmin"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
