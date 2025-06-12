@@ -1,0 +1,22 @@
+{
+	"name": "ds_blob_sourcefiles_sales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobfabricstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sales Data.xlsx",
+				"container": "sourcefiles"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

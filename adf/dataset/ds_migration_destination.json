@@ -1,0 +1,80 @@
+{
+	"name": "ds_migration_destination",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobfabricstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "destination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Id",
+				"type": "String"
+			},
+			{
+				"name": "START",
+				"type": "String"
+			},
+			{
+				"name": "STOP",
+				"type": "String"
+			},
+			{
+				"name": "PATIENT",
+				"type": "String"
+			},
+			{
+				"name": "ORGANIZATION",
+				"type": "String"
+			},
+			{
+				"name": "PAYER",
+				"type": "String"
+			},
+			{
+				"name": "ENCOUNTERCLASS",
+				"type": "String"
+			},
+			{
+				"name": "CODE",
+				"type": "String"
+			},
+			{
+				"name": "DESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "BASE_ENCOUNTER_COST",
+				"type": "String"
+			},
+			{
+				"name": "TOTAL_CLAIM_COST",
+				"type": "String"
+			},
+			{
+				"name": "PAYER_COVERAGE",
+				"type": "String"
+			},
+			{
+				"name": "REASONCODE",
+				"type": "String"
+			},
+			{
+				"name": "REASONDESCRIPTION",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

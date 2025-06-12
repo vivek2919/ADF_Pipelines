@@ -1,0 +1,66 @@
+{
+	"name": "3 Area Calculation",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set Length",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Length",
+					"value": 10
+				}
+			},
+			{
+				"name": "Set Breadth",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Breadth",
+					"value": 5
+				}
+			},
+			{
+				"name": "Area Calculation",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Area",
+					"value": {
+						"value": "@mul(variables('Length'),variables('Breadth'))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Length": {
+				"type": "Integer"
+			},
+			"Breadth": {
+				"type": "Integer"
+			},
+			"Area": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-06-08T08:11:02Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

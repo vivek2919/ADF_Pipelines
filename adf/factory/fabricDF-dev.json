@@ -1,0 +1,9 @@
+{
+	"name": "fabricDF-dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "714e2139-757a-43e1-96a5-4b5c3a401d2f",
+		"tenantId": "232aa591-630f-4dc3-a40a-9cedd83d884b"
+	}
+}

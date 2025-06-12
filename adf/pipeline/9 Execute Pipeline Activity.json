@@ -1,0 +1,45 @@
+{
+	"name": "9 Execute Pipeline Activity",
+	"properties": {
+		"activities": [
+			{
+				"name": "PL wo Parameters",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "8 Pipeline wo Parameters Activity",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "PL with Parameters",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "8 1 Pipeline with Parameter",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FileName": "patients.csv"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-06-10T06:13:20Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
