@@ -1,0 +1,12 @@
+{
+	"name": "ds_migrate_sqlserver_tables_source_sol2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_demo_fabric_sqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
